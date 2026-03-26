@@ -15,7 +15,7 @@ export default function DashboardLayout() {
       <div className="flex flex-col flex-1 min-w-0 overflow-hidden">
         <Topbar onToggleSidebar={() => setSidebarOpen((p) => !p)} />
 
-        <main className="flex-1 overflow-y-auto bg-[#0A0A0F] p-4">
+        <main className="flex-1 overflow-y-auto no-scrollbar bg-[#0A0A0F] p-4">
           <Outlet />
         </main>
       </div>

@@ -53,7 +53,7 @@ export default function Sidebar({ isOpen = true }) {
       </div>
 
       {/* Scrollable Nav */}
-      <nav className={`flex flex-col gap-0.5 flex-1 overflow-y-auto pb-3 ${isOpen ? "px-3" : "px-2"}`}>
+      <nav className={`flex flex-col gap-0.5 flex-1 overflow-y-auto no-scrollbar pb-3 ${isOpen ? "px-3" : "px-2"}`}>
 
         {/* Dashboards Section */}
         {isOpen && (

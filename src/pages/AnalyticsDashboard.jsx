@@ -14,7 +14,7 @@ export default function AnalyticsDashboard() {
         <RevenueHeroMetric className="flex-[1.2]" />
         <RiskSummaryPanel className="flex-1" />
       </div>
-      <div className="flex flex-row gap-3">
+      <div className="flex flex-row gap-2">
         <ForecastVsTargetCard className="flex-[1.5]" />
         <ManagerActionQueueCard className="flex-1" />
       </div>
