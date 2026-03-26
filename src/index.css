@@ -121,15 +121,10 @@ body {
 }
 
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
+  width: 100%;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
 h1,
@@ -257,6 +252,50 @@ code {
   * {
     @apply border-border outline-ring/50;}
   body {
-    @apply bg-background text-foreground;}
+    @apply bg-background text-foreground;
+    background-color: var(--bg-primary);
+    font-family: "Inter", sans-serif;
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
   html {
-    @apply font-sans;}}
+    @apply font-sans;}
+}
+
+/* CSS variables — used by Recharts tooltip styles and inline component styles */
+:root {
+  --bg-primary:          #0A0A0F;
+  --bg-surface:          #111118;
+  --bg-card:             #16161E;
+  --bg-card-hover:       #1C1C26;
+  --bg-input:            #1E1E28;
+  --border-default:      #2A2A38;
+  --border-subtle:       #1F1F2B;
+  --accent-blue:         #3B6FE8;
+  --accent-blue-hover:   #4D7FF5;
+  --accent-blue-muted:   #1E2F5C;
+  --accent-green:        #22C55E;
+  --accent-green-muted:  #14381F;
+  --accent-red:          #EF4444;
+  --accent-red-muted:    #3B1212;
+  --accent-orange:       #F97316;
+  --accent-orange-muted: #3D2008;
+  --accent-amber:        #FBBF24;
+  --accent-amber-muted:  #2A2214;
+  --text-primary:        #F0F0F8;
+  --text-secondary:      #8888A4;
+  --text-tertiary:       #55556A;
+}
+
+/* shadcn Card dark override — apply via className="card-dark" on every <Card> */
+.card-dark {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-default) !important;
+  border-radius: 12px !important;
+}
+
+/* Table row hover state — add className="table-row-hover" to every <tr> */
+.table-row-hover:hover {
+  background-color: var(--bg-card-hover);
+}
