@@ -7,9 +7,9 @@ export default function StatCardWithLine({ className = "" }) {
   ];
 
   return (
-    <Card className={`card-dark border-[#1F1F2B] h-[200px] flex flex-col ${className}`}>
-      <CardHeader className="px-5 pt-4 pb-0 space-y-0 shrink-0">
-        <div className="h-4 mb-1" /> {/* Title alignment spacer */}
+    <Card className={`card-dark border-[#1F1F2B] h-[220px] flex flex-col ${className}`}>
+      <CardHeader className="px-5 pt-3 pb-0 space-y-0 shrink-0">
+        <div className="h-3 mb-1" /> {/* Title alignment spacer */}
         <CardTitle className="text-[12px] font-medium text-[#8888A4] leading-none">Revenue Growth</CardTitle>
         <p className="text-[11px] text-[#55556A] leading-none mt-1">Year to Date (YTD)</p>
       </CardHeader>

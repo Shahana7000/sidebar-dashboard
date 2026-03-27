@@ -16,7 +16,7 @@ export default function StatCardSimple({ type = "revenue", className = "" }) {
   const deltaPositive = isRevenue;
 
   return (
-    <Card className={`card-dark border-[#1F1F2B] h-[200px] flex flex-col ${className}`}>
+    <Card className={`card-dark border-[#1F1F2B] h-[220px] flex flex-col ${className}`}>
       <CardContent className="px-5 pt-4 pb-4 flex-grow flex flex-col justify-between overflow-hidden">
         <div className="flex flex-col shrink-0">
           <div className={`w-7 h-7 rounded-[6px] flex items-center justify-center ${iconBg} ${iconColor} mb-2`}>
